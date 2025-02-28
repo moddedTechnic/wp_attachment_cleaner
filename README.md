@@ -1,5 +1,7 @@
 # Attachment Cleaner
 
+A tool to automatically remove stale attachments from a WordPress site.
+
 Uses the WordPress API to remove attachments from a site if they match certain criteria.
 
 
@@ -20,4 +22,8 @@ Uses the WordPress API to remove attachments from a site if they match certain c
 
 
 To have the tool delete attachments (rather than perform a dry-run), set the environment variable `WPAC_MODE` to `dangerous`.
+
+
+It is recommended to set the tool as a cronjob to run periodically.
+This will ensure that stale attachments are regularly cleared from the site.
 
